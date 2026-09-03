@@ -1,0 +1,84 @@
+name: Deploy (Firebase Hosting channels)
+on:
+  push:
+    branches: [ dev, uat, prod ]
+  workflow_dispatch: {}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      PROJECT_ID: indixpert-training
+      PROJECT_NUMBER: 621538598191
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with: { node-version: 20 }
+
+      - name: Install Dependencies and Build
+        run: |
+          npm ci
+          npm run build   # must produce ./dist per firebase.json
+
+      # choose provider + SA + target + channel by branch
+      - name: Select WIF provider, SA, target & channel
+        id: sel
+        run: |
+          if [ "${GITHUB_REF}" = "refs/heads/dev" ]; then
+            echo "PROVIDER=github-dev" >> $GITHUB_OUTPUT
+            echo "SA=firebase-deployer-dev@${PROJECT_ID}.iam.gserviceaccount.com" >> $GITHUB_OUTPUT
+            echo "TARGET=dev" >> $GITHUB_OUTPUT
+            echo "CHANNEL=dev" >> $GITHUB_OUTPUT
+          elif [ "${GITHUB_REF}" = "refs/heads/uat" ]; then
+            echo "PROVIDER=github-uat" >> $GITHUB_OUTPUT
+            echo "SA=firebase-deployer-uat@${PROJECT_ID}.iam.gserviceaccount.com" >> $GITHUB_OUTPUT
+            echo "TARGET=uat" >> $GITHUB_OUTPUT
+            echo "CHANNEL=uat" >> $GITHUB_OUTPUT
+          else  # prod branch
+            echo "PROVIDER=github-prod" >> $GITHUB_OUTPUT
+            echo "SA=firebase-deployer-prod@${PROJECT_ID}.iam.gserviceaccount.com" >> $GITHUB_OUTPUT
+            echo "TARGET=prod" >> $GITHUB_OUTPUT
+            echo "CHANNEL=" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Auth (WIF → short-lived access token)
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: projects/${{ env.PROJECT_NUMBER }}/locations/global/workloadIdentityPools/github/providers/${{ steps.sel.outputs.PROVIDER }}
+          service_account: ${{ steps.sel.outputs.SA }}
+          # token_format: access_token
+
+      - name: Install Firebase CLI
+        run: npm i -g firebase-tools
+
+      # export token once so firebase CLI uses it automatically
+
+      # (optional but safe) ensure target mapping exists in CI, even if .firebaserc is present
+
+      # dev/uat → channel deploy (temporary URLs)
+      - name: Deploy to channel (dev/uat)
+        if: ${{ steps.sel.outputs.CHANNEL != '' }}
+        run: |
+          # firebase hosting:channel:deploy ${{ steps.sel.outputs.CHANNEL }} \
+          #   --project $PROJECT_ID \
+          #   --only hosting:${{ steps.sel.outputs.TARGET }} \
+          #   --expires 30d
+           firebase deploy \
+            --only hosting:${{ steps.sel.outputs.TARGET }} \
+            --project $PROJECT_ID
+
+
+      # prod → live deploy
+      - name: Deploy to live (prod)
+        if: ${{ steps.sel.outputs.CHANNEL == '' }}
+        run: |
+          firebase deploy \
+            --only hosting:${{ steps.sel.outputs.TARGET }} \
+            --project $PROJECT_ID

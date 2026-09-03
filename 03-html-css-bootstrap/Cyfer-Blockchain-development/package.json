@@ -1,0 +1,22 @@
+{
+  "name": "cyfer-blockchain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulsingh325/Cyfer-Blockchain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulsingh325/Cyfer-Blockchain/issues"
+  },
+  "homepage": "https://github.com/rahulsingh325/Cyfer-Blockchain#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}

@@ -1,0 +1,115 @@
+@import "../theme.scss";
+
+// Custom SCSS for Order page only
+.order {
+  .rounded-12 {
+    border-radius: 12px;
+  }
+
+  .btn-brand-filled:hover {
+    background-color: map-get($brand-colors, 400) !important; // custom
+  }
+
+  // Soft "See Detail" Button
+  .btn-brand-soft:hover {
+    background-color: map-get($brand-colors, 75) !important; // custom
+  }
+
+  .w-sixty {
+    width: 60% !important;
+  }
+
+  .w-md-140 {
+    width: 100%; // Default width for small screens
+
+    @media (min-width: 768px) {
+      // md breakpoint in Bootstrap
+      width: 140%; // Width for md and larger screens
+    }
+  }
+}
+
+// Custom SCSS for History page only
+.history {
+  .custom-divider {
+    border: 1px dashed map-get($neutral-colors, 300);
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px; // custom
+      height: 22px; // custom
+      background: white; // custom
+      border-radius: 50%; // custom
+    }
+
+    &::before {
+      left: -10%; // custom
+    }
+
+    &::after {
+      right: -10%; // custom
+    }
+  }
+
+  .card-header-height {
+    height: 4.125rem;
+  }
+
+  /* Print icon filter */
+  .print-icon {
+    filter: brightness(0) invert(1);
+  }
+
+  .table-row-height {
+    height: 4.125rem;
+  }
+
+  .pagination-height {
+    min-height: 4.125rem;
+    height: 4.125rem;
+  }
+
+  .sidebar-transition {
+    transition: transform 0.3s ease;
+  }
+}
+
+// Custom SCSS for Order & History page
+.paginate {
+  .page-link {
+    width: 36px; // custom
+    height: 36px; // custom
+  }
+
+  // Active page
+  .page-item.active .page-link {
+    background-color: map-get($brand-colors, 300); // custom
+    border-color: map-get($brand-colors, 300); // custom
+  }
+}
+
+/* Order item image style (replaces inline style) */
+.order-item-image {
+  width: 94px;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+/* Avatar container */
+.avatar-style {
+  width: 68px;
+  height: 68px;
+  border-radius: 21px;
+  padding: 24px 21px;
+}
+
+/* Avatar text */
+.avatar-text {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+}

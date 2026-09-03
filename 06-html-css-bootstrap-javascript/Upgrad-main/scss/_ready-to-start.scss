@@ -1,0 +1,19 @@
+// bg-img , text-color-change
+
+@media (max-width: 768px) {
+    .text-color-change {
+        padding-top: 16px;
+        color: $dark !important;
+    }
+
+    .bg-imag{
+        height: 400px ;
+        border-radius: 50% ;
+    }
+}
+
+@media (max-width: 991px) {
+    .text-color-change {
+        margin-top: -16px;
+    }
+}

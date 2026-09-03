@@ -1,0 +1,107 @@
+[
+  {
+    "row": "A",
+    "tables": [
+      {
+        "id": 1,
+        "tableNumber": "T-01",
+        "sittingCapacity": 4,
+        "status": "available"
+      },
+      {
+        "id": 2,
+        "tableNumber": "T-02",
+        "sittingCapacity": 4,
+        "status": "occupied"
+      },
+      {
+        "id": 3,
+        "tableNumber": "T-03",
+        "sittingCapacity": 12,
+        "status": "available"
+      },
+      {
+        "id": 4,
+        "tableNumber": "T-04",
+        "sittingCapacity": 4,
+        "status": "available"
+      },
+      {
+        "id": 5,
+        "tableNumber": "T-05",
+        "sittingCapacity": 4,
+        "status": "occupied"
+      }
+    ]
+  },
+  {
+    "row": "B",
+    "tables": [
+      {
+        "id": 6,
+        "tableNumber": "T-06",
+        "sittingCapacity": 4,
+        "status": "available"
+      },
+      {
+        "id": 7,
+        "tableNumber": "T-07",
+        "sittingCapacity": 4,
+        "status": "occupied"
+      },
+      {
+        "id": 8,
+        "tableNumber": "T-08",
+        "sittingCapacity": 12,
+        "status": "reserved"
+      },
+      {
+        "id": 9,
+        "tableNumber": "T-09",
+        "sittingCapacity": 4,
+        "status": "available"
+      },
+      {
+        "id": 10,
+        "tableNumber": "T-10",
+        "sittingCapacity": 4,
+        "status": "reserved"
+      }
+    ]
+  },
+  {
+    "row": "C",
+    "tables": [
+      {
+        "id": 11,
+        "tableNumber": "T-11",
+        "sittingCapacity": 4,
+        "status": "reserved"
+      },
+      {
+        "id": 12,
+        "tableNumber": "T-12",
+        "sittingCapacity": 4,
+        "status": "reserved"
+      },
+      {
+        "id": 13,
+        "tableNumber": "T-13",
+        "sittingCapacity": 12,
+        "status": "available"
+      },
+      {
+        "id": 14,
+        "tableNumber": "T-14",
+        "sittingCapacity": 4,
+        "status": "occupied"
+      },
+      {
+        "id": 15,
+        "tableNumber": "T-15",
+        "sittingCapacity": 4,
+        "status": "available"
+      }
+    ]
+  }
+]

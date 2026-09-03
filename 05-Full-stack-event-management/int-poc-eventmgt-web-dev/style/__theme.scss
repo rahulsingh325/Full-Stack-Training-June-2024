@@ -1,0 +1,122 @@
+/* IMPORT DESIGN TOKENS */
+@import "./_variables";
+
+/* ===================================================== */
+@each $name, $value in $custom-font-sizes {
+    .fs-#{$name} {
+        // font-family: $font-primary;
+        font-size: map-get($value, size);
+        line-height: map-get($value, line-height);
+        font-weight: map-get($value, weight);
+    }
+}
+
+/* =====================================================
+   COLOR UTILITIES
+   .text-primary-100
+   .bg-grey-20
+   .border-secondary-110
+===================================================== */
+@each $name, $map in $custom-colors {
+    @each $shade, $color in $map {
+        .text-#{$name}-#{$shade} {
+            color: $color !important;
+        }
+
+        .bg-#{$name}-#{$shade} {
+            background-color: $color !important;
+        }
+
+        .border-#{$name}-#{$shade} {
+            border-color: $color !important;
+        }
+    }
+}
+
+/* =====================================================
+   SPACING UTILITIES
+   m-4, px-6, mt-2 etc.
+===================================================== */
+@each $key, $value in $spacers {
+
+    /* all sides */
+    .m-#{$key} {
+        margin: $value !important;
+    }
+
+    .p-#{$key} {
+        padding: $value !important;
+    }
+
+    /* vertical / horizontal */
+    .mx-#{$key} {
+        margin-left: $value !important;
+        margin-right: $value !important;
+    }
+
+    .my-#{$key} {
+        margin-top: $value !important;
+        margin-bottom: $value !important;
+    }
+
+    .px-#{$key} {
+        padding-left: $value !important;
+        padding-right: $value !important;
+    }
+
+    .py-#{$key} {
+        padding-top: $value !important;
+        padding-bottom: $value !important;
+    }
+
+    /* directional */
+    .mt-#{$key} {
+        margin-top: $value !important;
+    }
+
+    .mb-#{$key} {
+        margin-bottom: $value !important;
+    }
+
+    .ms-#{$key} {
+        margin-left: $value !important;
+    }
+
+    .me-#{$key} {
+        margin-right: $value !important;
+    }
+
+    .pt-#{$key} {
+        padding-top: $value !important;
+    }
+
+    .pb-#{$key} {
+        padding-bottom: $value !important;
+    }
+
+    .ps-#{$key} {
+        padding-left: $value !important;
+    }
+
+    .pe-#{$key} {
+        padding-right: $value !important;
+    }
+}
+
+/* =====================================================
+   BORDER RADIUS UTILITIES
+   .radius-sm, .radius-lg
+===================================================== */
+@each $name, $value in $radius-sizes {
+    .radius-#{$name} {
+        border-radius: $value !important;
+    }
+}
+
+
+@import "components/_dashboard";
+@import "components/_sidebar";
+@import "components/_calendar";
+@import "components/_inbox";
+@import "components/_event";
+@import "components/_authentication";

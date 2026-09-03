@@ -1,0 +1,25 @@
+.consultation-section {
+    height: 300px;
+
+    h3 {
+        font-size: $h3-font-size;
+    }
+    p {
+        font-size: $h4-font-size;
+    }
+
+    @media (max-width: 576px) {
+        h3{
+            font-size: $h4-font-size;
+        }
+        p {
+            font-size: $h5-font-size;
+        }
+}
+
+.get-button {
+    border-radius: 2px;
+    font-size: $h6-font-size;
+ 
+}
+}

@@ -1,0 +1,28 @@
+.card-item {
+    transition: all 0.3s ease;
+
+    &.active {
+        background-color: #e7f8d4 !important;
+    }
+}
+
+.scroll-height {
+    max-height: 426px;
+    overflow-y: auto;
+    scrollbar-color: $secondary $primary ;
+}
+
+.back-color {
+    background-color: #D9D9D9;
+}
+
+@media (max-width: 991px) {
+    .text-h2{
+        font-size: 2rem !important;
+    }
+    .scroll-height {
+        max-height: 326px;
+        overflow-y: auto;
+        scrollbar-color: $secondary $primary ;
+    }
+}

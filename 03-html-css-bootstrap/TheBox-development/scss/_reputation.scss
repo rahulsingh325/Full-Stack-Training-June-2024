@@ -1,0 +1,25 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .reputation-section .row.row-col-sm-6>.col-md:nth-child(3) {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.reputation-section .col-md-4 {
+    max-width: 292px;
+    flex: 0 0 292px;
+
+}
+
+.reputation-section .card {
+    border-radius: 4px; 
+    border: 1.4px solid #000; 
+}
+
+@media (max-width: 576px) {
+    .reputation-section .card-body {
+        text-align: center;
+    }
+}
+

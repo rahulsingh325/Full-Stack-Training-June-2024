@@ -1,0 +1,73 @@
+// .resources-section {
+//     .bg-sec-8 {
+//         background-image: url(/images/sec-8-bg-pic.svg);
+//     }
+
+//     .sec-8-p {
+//         font-size: 40px;
+//         color: #C5B0FC !important;
+//     }
+
+//     .sec-8-bootom-bg {
+//         background-image: url('/images/sec-8-bg-pic.svg');
+//         clip-path: polygon(12% 0%, 100% 0%, 100% 92%, 90% 100%, 0% 100%, 0% 10%);
+//         min-width: 400px;
+//     }
+
+//     .font-clash-display {
+//         font-family: "Clash Display Variable", serif !important;
+//     }
+
+//     @media (max-width: 991.98px) {
+//         .sec-8-p {
+//             font-size: 22px;
+//         }
+//     }
+// }
+
+// .resources-section {
+//     .bg-sec-8 {
+//         background-image: url(/images/sec-8-bg-pic.svg);
+//     }
+
+//     .sec-8-p {
+//         font-size: 40px;
+//         color: #C5B0FC !important;
+//     }
+
+//     .sec-8-bootom-bg {
+//         background-image: url('/images/sec-8-bg-pic.svg');
+//         clip-path: polygon(12% 0%, 100% 0%, 100% 92%, 90% 100%, 0% 100%, 0% 10%);
+//         min-width: 400px;
+//     }
+
+//     .font-clash-display {
+//         font-family: "Clash Display Variable", serif !important;
+//     }
+
+//     @media (max-width: 991.98px) {
+//         .sec-8-p {
+//             font-size: 22px;
+//         }
+//     }
+// }
+
+.resources-section {
+
+
+
+
+    .clip-pattern {
+        background-image: url('../images/resourcos/card-low.svg');
+        clip-path: polygon(12% 0, 100% 0, 100% 88%, 87% 100%, 0 100%, 0 13%);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width: 576px){
+        .image-back{
+            display: none;
+        }
+    }
+
+}

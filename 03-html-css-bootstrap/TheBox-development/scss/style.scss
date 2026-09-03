@@ -1,0 +1,147 @@
+$enable-negative-margins: true;
+
+// Primary Colors
+$primary-blue: #2947A9; // Dark Blue (for main text, headings, accents)
+$secondary-blue: #3867d6; // Lighter Blue (for highlights, buttons)
+
+// Text Colors
+$text-dark: #3D445C; // Very Dark Gray (for main body text)
+$text-light: #7f8c8d; // Medium Gray (for secondary text, captions)
+$text-white: #ffffff; // White
+
+// Background Colors
+$bg-light: #f4f4f4; // Very Light Gray (for sections, backgrounds)
+$bg-white: #ffffff;
+
+// Accent Colors
+$accent-orange: #F9995D; // Orange (for call-to-actions, highlights)
+
+// Border Colors
+$border-light: #dfe6e9; // Very Light Gray (for dividers, borders)
+
+
+
+$custom-theme-colors: (
+    "primary": $primary-blue,
+    "secondary": $secondary-blue,
+    "text-dark": $text-dark,
+    "text-light": $text-light,
+    "text-white": $text-white,
+    "bg-light": $bg-light,
+    "bg-white": $bg-white,
+    "accent-orange": $accent-orange,
+    "border-light": $border-light,
+);
+
+//  nav-bar custmization
+
+$nav-link-color: #14171F;
+$nav-link-hover-color: $accent-orange;
+$link-decoration: none;
+
+// font customization
+
+$font-family-base: work-sans, sans-serif;
+$font-size-base: 1rem;
+
+// container customization
+
+$custom-container-max-widths: (
+    xl: 1150px,
+    xxl: 1232px,
+);
+
+// spacer customization
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer * 1,
+  4: $spacer * 2,
+  5: $spacer * 3,
+  100: $spacer * 6.25,
+  120: $spacer * 7.5,
+  40: $spacer * 2.5,
+  50: $spacer * 3.125,
+  30: $spacer * 1.875,
+  60: $spacer * 3.75,
+  76: $spacer * 4.75,
+
+  
+);
+
+
+
+// font size customization
+
+$font-size-base: 1rem;
+
+$h1-font-size: min(72px, calc($font-size-base + 4.5vw));
+$h2-font-size: $font-size-base * 3.75;
+$h3-font-size: $font-size-base * 2.25;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1.13;
+$h7-font-size: $font-size-base;
+
+$nav-link-font-size: $h6-font-size;
+
+$custom-font-size: (
+    7: $h7-font-size
+);
+
+
+// 
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+// maping
+$theme-colors: map-merge($map1: $theme-colors, $map2: $custom-theme-colors);
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
+
+$font-sizes: map-merge($font-sizes, $custom-font-size); // Now $font-sizes is defined
+
+
+// creating mixins
+
+@mixin hover-effect($color: $accent-orange, $scale: 1.1) {
+    transition: transform 0.2s, color 0.2s, filter 0.2s;
+
+    &:hover {
+        color: $color;
+        transform: scale($scale);
+        filter: brightness(0.9);
+    }
+}
+
+@mixin logo-hover-effect($scale: 1.2, $brightness: 1.2) {
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+    &:hover {
+        transform: scale($scale);
+        filter: brightness($brightness);
+    }
+}
+
+
+
+// Importing Bootstrap's core styles
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss'; // Import Bootstrap first
+
+
+// Import custom styles
+
+@import './header.scss';
+@import './hero.scss';
+@import './reputation';
+@import './footer';
+@import './bottom';
+@import './form';
+@import './about';
+@import './services';
+@import './consultation';
+@import './experience';
+@import './project';

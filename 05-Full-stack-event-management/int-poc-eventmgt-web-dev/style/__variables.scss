@@ -1,0 +1,129 @@
+/* BRAND COLORS (BASE) */
+$primary:   #F26CF9;
+$secondary: #1C2346;
+$warning:   #FFCA39;
+$light:     #FFFFFF;
+$dark:      #1E1E20;
+
+//  TYPOGRAPHY SCALE (MAP)
+$custom-font-sizes: (
+  h1:     (size: 32px, line-height: 40px, weight: 700),
+  h2:     (size: 28px, line-height: 36px, weight: 600),
+  h3:     (size: 26px, line-height: 34px, weight: 600),
+  h4:     (size: 24px, line-height: 32px, weight: 600),
+  h5:     (size: 22px, line-height: 30px, weight: 600),
+  h6:     (size: 20px, line-height: 28px, weight: 600),
+  
+  
+  body-lg:(size: 16px, line-height: 26px, weight: 400),
+  body-md:(size: 14px, line-height: 22px, weight: 400),
+  body-sm:(size: 12px, line-height: 18px, weight: 400),
+
+  btn-lg: (size: 14px, line-height: 18px, weight: 600),
+  btn-sm: (size: 12px, line-height: 16px, weight: 600),
+);
+
+/* SPACING SYSTEM */
+$spacer: 0.25rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 1,   //4px
+  2: $spacer * 2,   //8px
+  3: $spacer * 3,   //12px
+  4: $spacer * 4,   //16px
+  5: $spacer * 5,   //20px
+  6: $spacer * 6,   //24px
+  8: $spacer * 8,   //32px
+  9: $spacer * 9,   // 36x
+  10:$spacer * 10,  //40px
+  12:$spacer * 12,  //48px
+  16:$spacer * 16,  //64px
+);
+
+/* BORDER RADIUS */
+$radius-sizes: (
+  none: 0,
+  sm:   6px,
+  md:   8px,
+  lg:   12px,
+  xl:   16px,
+);
+
+/* COLOR SCALES (MAPS) */
+
+/* Primary – Pink */
+$Primary-Color: (
+  30:  #FDEDFE,
+  40:  #FCE2FE,
+  50:  #FCD3FE,
+  90:  #F589FA,
+  100: #F26CF9,
+  110: #C256C7,
+);
+
+/* Secondary – Indigo */
+$Secondary-Color: (
+  50:  #D3DAF9,
+  60:  #ABB4DD,
+  70:  #707DBF,
+  90:  #5562A2,
+  100: #37437D,
+  110: #1C2346,
+);
+
+/* Yellow */
+$Warning-Color: (
+  90:  #FFEFC3,
+  100: #FFCA39,
+);
+
+/* Grey */
+$Grey-Color: (
+  10:  #FFFFFF,
+  20:  #F7F7F7,
+  30:  #858585,
+  40:  #E0E0E1,
+  50:  #C3C3C4,
+  60:  #9F9FA1,
+  70:  #777779,
+  80:  #636365,
+  90:  #434345,
+  100: #1E1E20,
+);
+
+/* Cool Grey */
+$Cool-Grey-Color: (
+  10:  #EEEFFF,
+  20:  #E4E5F5,
+  30:  #DDDEED,
+  40:  #D1D2E0,
+  50:  #B0B1BD,
+  60:  #8F8F99,
+  70:  #72737A,
+  80:  #56565C,
+  90:  #39393D,
+  100: #131314,
+);
+
+/* MASTER COLOR MAP */
+$custom-colors: (
+  "primary":   $Primary-Color,
+  "secondary": $Secondary-Color,
+  "warning":   $Warning-Color,
+  "grey":      $Grey-Color,
+  "cool-grey": $Cool-Grey-Color,
+);
+
+/* BOOTSTRAP OVERRIDES */
+$theme-colors: (
+  "primary":   $primary,
+  "secondary": $secondary,
+  "warning":   $warning,
+  "light":     $light,
+  "dark":      $dark,
+);
+
+/* BOOTSTRAP CORE (ORDER IMPORTANT) */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";

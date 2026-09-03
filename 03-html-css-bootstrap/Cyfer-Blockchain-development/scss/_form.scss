@@ -1,0 +1,7 @@
+.form-section {
+    @media (max-width: 991px) {
+        .back-image , .triangle-img {
+            display: none;
+        }
+    }
+}

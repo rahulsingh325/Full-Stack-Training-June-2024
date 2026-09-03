@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+$enable-negative-margins: true;
+
+
+//colors variable
+
+//brand colors
+$brand-colors: (
+    50: #E9EFFF,
+    75: #A4BEFF,
+    100: #7FA3FF,
+    200: #487CFF,
+    300: #2261FF,
+    400: #1844B3,
+    500: #153B9C,
+);
+
+//neutral colors
+$neutral-colors: (
+    50: #FAFAFA,
+    100: #F3F3F3,
+    200: #E6E7EA,
+    300: #969BA7,
+    400: #6B7283,
+    500: #2B354D,
+    600: #000C29,
+    700: #00081D,
+    800: #000719,
+);
+
+//succes colors
+$success-colors: (
+    50: #E6F8EF,
+    75: #97E1BF,
+    200: #2CC37E,
+    300: #01B763,
+    500: #01703C,
+);
+
+
+//warning colors
+$warning-colors: (
+    50: #FFF3E6,
+    100: #FFBB6B,
+    500: #9C5400,
+);
+
+//error colors
+$error-colors: (
+    50: #FEEEEC,
+    200: #F56F62,
+    300: #F35242,
+    400: #AA392E,
+    500: #943228,
+);
+
+$primary: #2261FF;
+$secondary: #0AADE1;
+$success: #01703C;
+$warning: #9C5400;
+$danger: #943228;
+
+$border-radius: .75rem;
+$border-radius-xl:1.25rem;
+
+//spacers
+$spacer: 0.25rem ;
+$spacers: (
+  0: 0,
+  1: $spacer * 1,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+);
+
+
+
+//importing bootstrap files
+
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+
+@import 'bootstrap/scss/bootstrap';
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+//include modules here 
+
+@import './modules/profile';
+
+
+//color classes
+$custom-colors: (
+  "brand": $brand-colors,
+  "neutral": $neutral-colors,
+  "success": $success-colors,
+  "warning": $warning-colors,
+  "error": $error-colors,
+);
+
+@each $name, $map in $custom-colors {
+  @each $shade, $color in $map {
+    .text-#{$name}-#{$shade} {
+      color: $color !important;
+    }
+    .bg-#{$name}-#{$shade} {
+      background-color: $color !important;
+    }
+    .border-#{$name}-#{$shade} {
+      border-color: $color !important;
+    }
+  }
+}
+
+
+//font size classes
+$custom-font-sizes: (
+  "body": (size: .75rem, line-height: 1.2),
+  "title": (size: 1rem, line-height: 1.6),
+  "h5": (size: 1.25rem, line-height: 1.2),
+  "h4": (size: 1.5rem, line-height: 1.2),
+  "h3": (size: 1.75rem, line-height: 1.4),
+  "h1": (size: 2.5rem, line-height: 1.2),
+  "caption": (size: .625rem, line-height: auto),
+);
+
+@each $name, $value in $custom-font-sizes {
+    .fs-#{$name} {
+        font-size: map-get($value, size);
+        line-height: map-get($value, line-height);
+
+         // Responsive fonts
+        @media (max-width: 1200px) {
+            @if $name == "h1" { font-size: 2.25rem; }
+            @if $name == "h3" { font-size: 1.5rem; }
+        }
+        @media (max-width: 1024px) {
+            @if $name == "h1" { font-size: 2rem; }
+            @if $name == "h3" { font-size: 1.25rem; }
+        }
+        @media (max-width: 720px) {
+            @if $name == "h1" { font-size: 1.75rem; }
+            @if $name == "h4" { font-size: 1.25rem; }
+        }
+        @media (max-width: 540px) {
+            @if $name == "h1" { font-size: 1.5rem; }
+        }
+    }
+}
+
+
+//widhts 
+.w-14{width: 0.875rem !important;}
+.w-34{width: 2.125rem !important;}
+.w-36{width: 2.25rem !important;}
+.w-40{width: 2.5rem !important;}
+.w-44{width: 2.75rem !important;}
+.w-52{width: 3.25rem !important;}
+.w-60{width: 3.75rem !important;}
+.w-80{width: 5rem !important; }
+.w-146{width: 9.125rem !important; }
+
+//Heights
+.h-34{height: 2.125rem !important;}
+.h-40{height: 2.5rem !important;}
+
+
+//Outlines 
+.outline-2{outline-width: 0.5rem !important; outline-style: solid;}
+.outline-3{outline-width: 0.75rem !important; outline-style: solid;}
+
+//outline colors
+.outline-brand-50{outline-color: #F5F8FF;}
+.outline-warning-50{outline-color: #FFFAF5;}
+.outline-success-50{outline-color: #F7FDFA;}
+.outline-error-50{outline-color: #FEF6F5 !important;}
+
+//aspect ration
+.square{aspect-ratio: 1/1;}
+
+
+//Additional utilities 
+.hide-scrollbar{
+//for firefox
+    scrollbar-width: none;
+
+//for chrome, safari ...
+    &::-webkit-scrollbar {
+    display: none;
+    }
+}
+
+.bg-active-white.active{background-color: #FFFFFF !important;}
+.text-active-black.active{color: #000000 !important;}
+
+.hover-text-white:hover{color: #ffffff !important;}

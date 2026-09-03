@@ -1,0 +1,40 @@
+{
+  "projects": { 
+    "default": "indixpert-training" 
+  },
+  "hosting": [
+    {
+      "target": "prod",
+      "public": "dist",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    
+    },
+    {
+      "target": "uat",
+      "public": "dist",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+      
+    },
+    {
+      "target": "dev",
+      "public": "dist",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+      
+    }
+  ]
+}

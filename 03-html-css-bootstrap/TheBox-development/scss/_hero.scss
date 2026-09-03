@@ -1,0 +1,27 @@
+.hero-section {
+    .btn-group {
+            width: 416px;
+            z-index: 1;
+    }
+    .carousel-caption {
+        width: 416px;
+        right: 0px;
+        left: auto;
+        bottom: 2.5rem;
+
+        background-color: $primary-blue;
+        color: $text-white;
+        padding: 20px;
+
+
+    }
+    @media (max-width: 576px) {
+    h1 {
+        display: none;
+    }
+}
+}
+
+
+
+

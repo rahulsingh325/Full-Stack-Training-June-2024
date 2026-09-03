@@ -1,0 +1,21 @@
+header {
+    height: 80px;
+
+    .nav-item {
+        padding: 0.25rem;
+
+        .nav-link {
+            padding: 1rem;
+            color: $nav-link-color;
+            transition: transform 0.2s, filter 0.2s;
+
+            @include hover-effect($accent-orange, 1.15);
+        }
+    }
+}
+
+.logo-icon {
+    @include logo-hover-effect(1.2, 1.3); 
+}
+
+

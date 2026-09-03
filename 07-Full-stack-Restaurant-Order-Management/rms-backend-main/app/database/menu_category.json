@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Main Course",
+        "slug":"main-course"
+    },
+    {
+        "id": 2,
+        "name": "Appetizer",
+        "slug":"appetizer"
+    },
+    {
+        "id": 3,
+        "name": "Dessert",
+        "slug":"dessert"
+    },
+    {
+        "id": 4,
+        "name": "Beverage",
+        "slug":"beverage"
+    }
+]

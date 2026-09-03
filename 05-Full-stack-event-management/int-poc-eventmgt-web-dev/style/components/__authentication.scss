@@ -1,0 +1,71 @@
+.signin-page {
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #6c757d;
+    width: 18px;
+    height: 18px;
+  }
+
+  .form-control {
+    padding-left: 40px;
+  }
+
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+  }
+}
+
+/* Chrome / Edge / Safari */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+/* Webkit browsers */
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none;
+}
+
+.signin-bg {
+  background-image: url("/images/register.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.signin-overlay-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px;
+  z-index: 2;
+}
+
+/* readability ke liye dark gradient */
+.signin-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.15),
+    transparent
+  );
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.login-form-wrapper {
+  max-width: 420px;
+}

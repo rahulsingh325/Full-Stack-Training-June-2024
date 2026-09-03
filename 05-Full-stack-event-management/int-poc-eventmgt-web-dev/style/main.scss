@@ -1,0 +1,264 @@
+@import "_theme";
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  /* body scroll band */
+}
+
+.dashboard-content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  /* CONTENT SCROLL */
+
+}
+
+.dashboard-content > main,
+.dashboard-content > .content,
+.dashboard-content > :nth-child(2) {
+  flex-grow: 1;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.schedule-image {
+  width: 100%;
+  height: 140px;
+  background-color: #e9ecef;
+  border-radius: 12px;
+}
+
+
+/* ==============================
+   SEARCH INPUT RESPONSIVE LOGIC
+================================ */
+
+
+.search-icon {
+  color: #6c757d;
+  /* muted */
+}
+
+.search-icon-wrapper {
+  background: transparent;
+}
+
+
+.rdp {
+  --rdp-accent-color: #f26cf9;
+  --rdp-background-color: transparent;
+}
+
+.rdp-day_selected {
+  background-color: #f26cf9 !important;
+  color: #fff !important;
+}
+
+.rdp-day_today {
+  font-weight: 600;
+}
+
+.rdp-day {
+  padding: 0;
+}
+
+.rdp-root {
+  --rdp-day-width: 48px !important;
+}
+
+.invoice-top-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    #f26cf9 0%,
+    #ff9ff3 100%
+  );
+}
+
+
+.fs-10{
+  font-size: 10px;
+}
+
+.fs-7{
+  font-size: 18px;
+}
+
+.fs-11{
+  font-size: 11px;
+}
+
+.fw-regular{
+  font-weight: 400 !important;
+}
+
+.w-25{
+  width: 25%;
+}
+
+.h-45{
+  height: 550px;
+}
+
+// gallery page
+
+.event-card {
+  border-radius: 16px;
+  // background: #fff;
+  padding: 10px;
+
+  .event-thumb {
+    height: 150px;
+    background: #e9ecef;
+    border-radius: 14px;
+    margin-bottom: 10px;
+  }
+
+  .event-info h6 {
+    font-size: 14px;
+  }
+}
+
+
+.meta-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #cfcfcf;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+//feedback 
+
+.feedback-donut {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #f26cf9 0% 90%,
+    #e9ecf5 90% 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-donut-inner {
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+
+//
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+//pagination
+
+.pagination-circle .page-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-weight: 500;
+}
+
+/* active page */
+.pagination-circle .page-item.active .page-link {
+  background-color: #f35cff; /* tumhara pink */
+  border-color: #f35cff;
+  color: #fff;
+}
+
+/* inactive */
+.pagination-circle .page-link {
+  background-color: #f2f3fb;
+  border-color: transparent;
+  color: #2e3a8c;
+  margin-right: 0.50rem;
+}
+
+/* prev / next buttons */
+.pagination-circle .page-item:first-child .page-link{
+  background-color: #ececec;
+}
+.pagination-circle .page-item:last-child .page-link {
+  background-color: #37437D;
+  color: #ffffff;
+}
+
+/* hover */
+.pagination-circle .page-link:hover {
+  background-color: #e6e8ff;
+}
+
+
+
+// Footer
+
+.social-svg {
+  stroke: #b5b5b5;
+}
+
+.breadcrumb-link {
+  background-color: rgba(242, 108, 249, 0.2);
+  color: #F26CF9;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  background-color: rgba(242, 108, 249, 0.35);
+  color: #F26CF9;
+}
+
+.breadcrumb-active {
+  background-color: #F26CF9;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* ONLY Admin dropdown */
+.admin-dropdown-toggle::after {
+  display: none !important;
+}
+
+
+.table-nowrap td,
+.table-nowrap th {
+  white-space: nowrap;
+}
+
+.table-ellipsis {
+  max-width: 160px; /* adjust if needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

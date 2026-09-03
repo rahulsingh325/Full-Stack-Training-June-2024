@@ -1,0 +1,215 @@
+$enable-negative-margins: true;
+
+//? ====Font Families====
+
+$font-family-base: 'Archivo', sans-serif;
+$headings-font-family: "Clash Display Variable", sans-serif;
+
+
+$primary: #FFFFFF;
+$secondary: #DAC8FF;
+$success: #6F26FF;
+$dark: #11111B;
+
+$custom-theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "dark": $dark,
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1700px,
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+    xxxl: 1464px,
+);
+
+//?  ===== custom spacing ====
+$spacer: 1rem;
+$custom-spacers: (
+    0: 0,
+    8: $spacer * 0.5,
+    16: $spacer * 1,
+    24: $spacer * 1.5,
+    28: $spacer * 1.75,
+    32: $spacer * 2,
+    40: $spacer * 2.5,
+    48: $spacer * 3,
+    56: $spacer * 3.5,
+    64: $spacer * 4,
+    72: $spacer * 4.5,
+    80: $spacer * 5,
+    88: $spacer * 5.5,
+    96: $spacer * 6,
+    107: $spacer * 6.687,
+    127: $spacer * 7.9375,
+    160: $spacer * 10,
+    200: $spacer * 12.5,
+    300: $spacer * 18.75,
+);
+
+//? ==== font-sizes ====
+$font-size-base: 1rem;
+
+$h1-font-size: min(68px, calc($font-size-base + 4.25vw)); //?  68px 
+$h2-font-size: $font-size-base * 3.75; //?  60px
+$h3-font-size: $font-size-base * 1.87; //?  30px
+$h4-font-size: $font-size-base * 1.75; //?  28px
+$h5-font-size: $font-size-base * 1.5; //?  24px
+$h6-font-size: $font-size-base; //?  16px
+$h7-font-size: $font-size-base * 1.25; //?  20px
+
+
+
+
+
+//?  ==== nav-link font-size ====
+
+
+
+$custom-font-size: (
+    7: $h7-font-size
+);
+
+
+
+
+//? ====body color====
+
+$body-bg: $dark;
+
+
+//? ===== button color=====
+
+$btn-gradient-start: $primary;
+$btn-gradient-end: $success;
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+//?  =====Map Merge=====
+
+$theme-colors : map-merge($map1: $theme-colors, $map2: $custom-theme-colors);
+$spacers : map-merge($map1: $spacers, $map2: $custom-spacers);
+$font-sizes : map-merge($map1: $font-sizes, $map2: $custom-font-size);
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+//? ======  btn customization  =====
+
+.btn-gradient {
+    background: linear-gradient(90deg, $btn-gradient-start -100%, $btn-gradient-end 100%);
+    color: $white;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 50%);
+    box-shadow: 1px $primary;
+
+    &:hover {
+        background: linear-gradient(90deg, $btn-gradient-end 0%, $btn-gradient-start 100%);
+        box-shadow: 0px 4px 20px $primary;
+    }
+}
+
+.btn-learn-more {
+    background-color: $dark;
+    color: $white;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out;
+    clip-path: polygon(0 0, 90% 0, 100% 40%, 100% 100%, 7% 100%, 0 58%);
+    box-shadow: 1px $primary;
+
+
+    &:hover {
+        background: linear-gradient(90deg, $btn-gradient-end 0%, $btn-gradient-start 100%);
+        box-shadow: 0px 4px 20px $primary;
+    }
+}
+
+.btn-gradient-outline {
+    border: 1px solid transparent;
+    border-radius: 50rem; // Bootstrap's `rounded-pill`
+    background-image: linear-gradient(#0b0b16, #0b0b16), linear-gradient(to right, #a84cff, #e6b8ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: $primary;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #0b0b16;
+        background-image: linear-gradient(to right, #a84cff, #e6b8ff);
+    }
+}
+
+
+// ! this is padding / this is not in use till now
+
+.resources-clip {
+    background-color: transparent;
+    clip-path: polygon(12% 0, 100% 0, 100% 88%, 87% 100%, 0 100%, 0 13%);
+}
+
+
+//? fome section clip-path 
+
+.cut-path-first-and-fourth {
+    clip-path: polygon(3% 0%, 100% 0%, 100% 60%, 97% 100%, 0% 100%, 0% 40%);
+}
+
+.cut-path-fome-textara {
+    clip-path: polygon(3% 0%, 100% 0%, 100% 88%, 97% 100%, 0% 100%, 0% 15%);
+}
+
+.cut-path-fome-two {
+    clip-path: polygon(5% 0%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 40%);
+}
+
+.cut-path-fome-three {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 95% 100%, 0% 100%, 0% 0%);
+}
+
+
+
+
+
+
+
+// body {
+//     background-image: url('../images/bg-images/Ellipse\ 22.svg');
+//     overflow: hidden;
+//     background-repeat: no-repeat;
+//     background-position: top left;
+//     background-size: auto;
+//
+
+
+
+//?  =====custom styles=====
+
+@import './header';
+@import './hero';
+@import './discover';
+@import './project';
+@import './states';
+@import './resources';
+@import './footer';
+@import './Credentials';
+@import './Testimonials';
+@import './services';
+@import './form';

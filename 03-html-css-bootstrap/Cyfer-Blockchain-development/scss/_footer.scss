@@ -1,0 +1,30 @@
+// Footer component
+.footer {
+
+
+
+
+
+    .Copyright {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .d-flex.gap-4 img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
+
+    @media (max-width: 991px) {
+        .back-image{
+            display: none;
+        }
+        h4{
+            font-size: 45px;
+        }
+    }
+
+
+}

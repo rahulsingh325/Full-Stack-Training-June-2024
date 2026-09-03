@@ -1,0 +1,206 @@
+[
+  {
+    "month": "January",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 40000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 15000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 10000
+      }
+    ]
+  },
+  {
+    "month": "February",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 48000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 17000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 25000
+      }
+    ]
+  },
+  {
+    "month": "March",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 55000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 5000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 30000
+      }
+    ]
+  },
+  {
+    "month": "April",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 46000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 3000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 24000
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 58000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 6500
+      },
+      {
+        "category": "Others",
+        "incomeValue": 32000
+      }
+    ]
+  },
+  {
+    "month": "June",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 60000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 20000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 33000
+      }
+    ]
+  },
+  {
+    "month": "July",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 62000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 2000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 35000
+      }
+    ]
+  },
+  {
+    "month": "August",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 59000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 9000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 34000
+      }
+    ]
+  },
+  {
+    "month": "September",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 61000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 39000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 36000
+      }
+    ]
+  },
+  {
+    "month": "October",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 64000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 42000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 38000
+      }
+    ]
+  },
+  {
+    "month": "November",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 63000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 41000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 37000
+      }
+    ]
+  },
+  {
+    "month": "December",
+    "income": [
+      {
+        "category": "Main Course",
+        "incomeValue": 70000
+      },
+      {
+        "category": "Beverage",
+        "incomeValue": 45000
+      },
+      {
+        "category": "Others",
+        "incomeValue": 40000
+      }
+    ]
+  }
+]

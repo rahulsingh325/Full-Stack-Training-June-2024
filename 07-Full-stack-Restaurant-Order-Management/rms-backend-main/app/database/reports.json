@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 800
+  },
+  {
+    "id": 2,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 420.5
+  },
+  {
+    "id": 3,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 390.75
+  },
+  {
+    "id": 4,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Qris",
+    "totalCollection": 500.2
+  },
+  {
+    "id": 5,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 650.1
+  },
+  {
+    "id": 6,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 720.3
+  },
+  {
+    "id": 7,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 480.6
+  },
+  {
+    "id": 8,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Qris",
+    "totalCollection": 530
+  },
+  {
+    "id": 9,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 610.45
+  },
+  {
+    "id": 10,
+    "date": "Wed, 04 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 710.9
+  },
+  {
+    "id": 11,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 820
+  },
+  {
+    "id": 12,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 430.25
+  },
+  {
+    "id": 13,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 410.8
+  },
+  {
+    "id": 14,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Qris",
+    "totalCollection": 520.1
+  },
+  {
+    "id": 15,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 670
+  },
+  {
+    "id": 16,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 740.2
+  },
+  {
+    "id": 17,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 490.3
+  },
+  {
+    "id": 18,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Qris",
+    "totalCollection": 540.5
+  },
+  {
+    "id": 19,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 620
+  },
+  {
+    "id": 20,
+    "date": "Sat, 14 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 720.75
+  },
+  {
+    "id": 21,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 830
+  },
+  {
+    "id": 22,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 440.1
+  },
+  {
+    "id": 23,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 420.9
+  },
+  {
+    "id": 24,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Qris",
+    "totalCollection": 530.8
+  },
+  {
+    "id": 25,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 680
+  },
+  {
+    "id": 26,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 750.1
+  },
+  {
+    "id": 27,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 500
+  },
+  {
+    "id": 28,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Qris",
+    "totalCollection": 550.6
+  },
+  {
+    "id": 29,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 630.2
+  },
+  {
+    "id": 30,
+    "date": "Tue, 24 Jun 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 730.8
+  },
+  {
+    "id": 31,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 840
+  },
+  {
+    "id": 32,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 450
+  },
+  {
+    "id": 33,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 430
+  },
+  {
+    "id": 34,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Qris",
+    "totalCollection": 540
+  },
+  {
+    "id": 35,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 690
+  },
+  {
+    "id": 36,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 760
+  },
+  {
+    "id": 37,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 510
+  },
+  {
+    "id": 38,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Qris",
+    "totalCollection": 560
+  },
+  {
+    "id": 39,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Debit/Credit card",
+    "totalCollection": 640
+  },
+  {
+    "id": 40,
+    "date": "Fri, 04 Jul 2023",
+    "paymentMethod": "Cash",
+    "totalCollection": 740
+  }
+]

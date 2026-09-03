@@ -1,0 +1,52 @@
+{
+  "name": "int-poc-eventmgt-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fullcalendar/daygrid": "^6.1.20",
+    "@fullcalendar/interaction": "^6.1.20",
+    "@fullcalendar/react": "^6.1.20",
+    "@fullcalendar/timegrid": "^6.1.20",
+    "@hookform/resolvers": "^5.2.2",
+    "@mui/material": "^7.3.7",
+    "@mui/x-date-pickers": "^8.24.0",
+    "axios": "^1.13.2",
+    "bootstrap": "^5.3.8",
+    "dayjs": "^1.11.19",
+    "dompurify": "^3.3.1",
+    "echarts": "^6.0.0",
+    "echarts-for-react": "^3.0.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.1.0",
+    "jspdf-autotable": "^5.0.7",
+    "lucide-react": "^0.561.0",
+    "next": "16.0.10",
+    "qrcode.react": "^4.2.0",
+    "react": "19.2.1",
+    "react-barcode": "^1.6.1",
+    "react-bootstrap": "^2.10.10",
+    "react-calendar": "^6.0.0",
+    "react-day-picker": "^9.13.0",
+    "react-dom": "19.2.1",
+    "react-hook-form": "^7.68.0",
+    "react-simple-wysiwyg": "^3.4.1",
+    "react-toastify": "^11.0.5",
+    "recharts": "^3.6.0",
+    "sass": "^1.97.0",
+    "swiper": "^12.0.3",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.10"
+  }
+}

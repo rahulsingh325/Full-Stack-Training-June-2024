@@ -1,0 +1,121 @@
+
+.hero-section {
+    position: relative;
+
+    .hero-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 75vh;
+        object-fit: cover;
+        z-index: -1;
+
+        @media (max-width: 768px) {
+            position: relative;
+        }
+
+        @media (max-width: 576px) {
+            position: relative;
+            min-height: 100vh;
+        }
+    }
+
+    .phon-img {
+        z-index: 2;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+
+        @media (min-width: 991px) and (max-width: 1200px) {
+            min-height: 60%;
+            min-width: 60%;
+        }
+    }
+
+    .head-1 {
+        max-width: 100%;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .green-slide {
+        position: relative;
+        background-color: #1d683e;
+        z-index: 3;
+        padding: 1rem 0;
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            margin-top: 25px !important;
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            margin-top: 100px !important;
+        }
+
+        @media (max-width: 576px) {
+            margin-top: -40px !important; 
+            padding-top: 12px;
+        }
+
+        .campi-3,
+        .campi-4,
+        .campi-5,
+        .campi-6 {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: 991px) and (max-width: 1400px) {
+        .text-h1 {
+            font-size: 3.5rem !important;
+        }
+
+        .text-h7 {
+            font-size: 1rem !important;
+        }
+        .green-slide {
+            margin-top: 25px !important;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .text-h1 {
+            padding-top: 30px !important;
+            font-size: 2.5rem !important;
+        }
+
+        .text-h7 {
+            padding-top: 30px !important;
+            font-size: 0.8rem !important;
+        }
+
+        .green-slide {
+            display: none;
+        }
+
+        .container {
+            padding: 28px !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .phon-img {
+            max-height: 90%;
+            max-width: 60%9
+        }
+
+
+    }
+
+
+
+}
+
+
+
+
+
+

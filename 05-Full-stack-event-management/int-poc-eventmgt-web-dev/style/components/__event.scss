@@ -1,0 +1,160 @@
+/* ===== Seat Plan Layout ===== */
+
+/* Default: Large screens */
+.seat-plan-layout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.seat-plan-image {
+  min-width: 221px;
+}
+
+.seat-plan-zones {
+  min-width: 172px;
+}
+
+.seat-zone-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+/* Below 1200px */
+@media (max-width: 1199px) {
+  .seat-plan-layout {
+    align-items: center;
+  }
+
+  .seat-plan-image {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .seat-plan-zones {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .seat-plan-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seat-plan-image {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .seat-plan-zones {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+
+
+
+
+/* Benefits cards safety */
+.seat-benefit-card {
+  min-width: 203px;
+}
+
+
+
+
+.search-input-wrapper input:focus,
+.search-input-wrapper input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
+@media (min-width: 576px) and (max-width: 1198.98px) {
+  .events-header .icon-text {
+    display: none;
+  }
+}
+
+
+.benefit-icon {
+  min-width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+
+.bookmark-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #EDEDED;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark-btn.active {
+  border-color: #f472d0;
+}
+
+.bookmark-btn.active svg {
+  stroke: #f472d0;
+}
+
+
+.seat-benefits-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+/* Desktop */
+.seat-benefit-card {
+  min-width: 0;
+}
+
+/*  MOBILE FIX */
+@media (max-width: 575px) {
+  .seat-benefits-wrapper {
+    flex-direction: column;
+  }
+
+  .seat-benefit-card {
+    width: 100%;
+  }
+}
+
+
+// Invoice page
+
+@media (max-width: 575px) {
+  .invoice-btn {
+    padding: 6px 8px !important;
+    border-radius: 50%;
+  }
+
+  .invoice-btn .btn-text {
+    display: none;
+  }
+}
+
+// invoices page
+
+@media (max-width: 575px) {
+  .invoice-title {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}

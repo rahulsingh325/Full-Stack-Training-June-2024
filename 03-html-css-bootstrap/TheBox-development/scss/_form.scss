@@ -1,0 +1,31 @@
+.form-section {
+
+    input::placeholder,
+    textarea::placeholder,.form-select {
+        font-size: $h6-font-size;
+        color: #6c757d; 
+    }
+
+    .required-field {
+        font-size: $h7-font-size;
+    }
+
+    input,
+    textarea {
+        border-radius: 4px; 
+        border: 1px;
+        padding: 0.75rem;
+        resize: none;
+    }
+
+    .btn-submit {
+        background-color: $primary-blue;
+        border-radius: 2px; 
+        font-size: $h6-font-size;
+        &:hover {
+            @include hover-effect($primary-blue, 1.05);
+        }
+    }
+
+}
+

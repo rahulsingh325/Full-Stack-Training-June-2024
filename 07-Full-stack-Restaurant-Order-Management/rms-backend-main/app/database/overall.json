@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Total sale",
+        "icon": "totalsale.svg",
+        "amount": 24064,
+        "percent": 27.4,
+        "subtitle": "From last week"
+    },
+    {
+        "id": 2,
+        "title": "Total order",
+        "icon": "totalorder.svg",
+        "amount": 24064,
+        "percent": 27.4,
+        "subtitle": "From last week"
+    },
+    {
+        "id": 3,
+        "title": "Total revenue",
+        "icon": "totalrevence.svg",
+        "amount": 24064,
+        "percent": 27.4,
+        "subtitle": "From last week"
+    },
+    {
+        "id": 4,
+        "title": "Cancelled order",
+        "icon": "cancleorder.svg",
+        "amount": 24064,
+        "percent": 27.4,
+        "subtitle": "From last week"
+    }
+]

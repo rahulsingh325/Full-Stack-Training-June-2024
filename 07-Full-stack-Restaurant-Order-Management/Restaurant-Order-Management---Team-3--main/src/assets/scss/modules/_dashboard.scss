@@ -1,0 +1,83 @@
+@import "../theme.scss";
+
+.dashboard-page,
+.table-page {
+    .dashed-line {
+        border-bottom: 1px dashed #6B7283;
+        margin: 20px 0;
+        opacity: 0.9;
+        border-image: repeating-linear-gradient(to right,
+                #6B7283 0,
+                #6B7283 10px,
+                transparent 10px,
+                transparent 20px) 1;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    // scrollbar 
+
+    .scroll-smooth {
+        scroll-behavior: smooth;
+    }
+
+    .select-none {
+        user-select: none;
+    }
+
+    .cursor-grab {
+        cursor: grab;
+    }
+
+    .cursor-grabbing {
+        cursor: grabbing
+    }
+
+
+
+    .rounded-8 {
+        border-radius: 0.5rem !important;
+    }
+
+
+
+    .w-24 {
+        width: 1.5rem !important
+    }
+
+
+    .outline-2 {
+        outline: 2px solid map-get($neutral-colors, 200) !important;
+    }
+
+
+    .w-30 {
+        width: 1.875rem !important
+    }
+
+    .h-12 {
+        height: 0.75rem !important
+    }
+
+    .h-30 {
+        height: 1.875rem !important
+    }
+
+    .w-12 {
+        width: 0.75rem !important
+    }
+
+    .row-gap-108 {
+        row-gap: 6.75rem !important;
+    }
+
+    //outline colors
+
+    .outline-neutral-50 {
+        outline-color: map-get($neutral-colors, 50) !important;
+    }
+
+    .bg-error-100 {
+        background-color: #FDE5E2;
+    }
+
+}

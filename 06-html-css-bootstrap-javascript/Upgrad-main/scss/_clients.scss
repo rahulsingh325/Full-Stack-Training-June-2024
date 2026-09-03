@@ -1,0 +1,30 @@
+.client-card {
+    transition: all 0.4s ease;
+}
+
+.client-card:hover {
+    background-color: #004852 !important;
+    transform: translateY(-5px);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.client-card:hover p,
+.client-card:hover small,
+.client-card:hover strong {
+    color: #fff !important;
+}
+
+
+@media (max-width: 768px) {
+    .custom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991px) {
+    .custom {
+        display: flex;
+        justify-content: center;
+    }
+}

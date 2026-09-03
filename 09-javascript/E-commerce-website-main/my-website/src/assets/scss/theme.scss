@@ -1,0 +1,49 @@
+@import "./theme/variables";
+@import "bootstrap/scss/bootstrap";
+
+
+.hero-btn {
+    background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.45);
+    transition: all 0.35s ease;
+    transform: translateY(0);
+
+    &:hover,
+    &:focus {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 25px rgba(255, 193, 7, 0.65);
+    }
+}
+
+
+// wishlist button
+
+.wishlist-btn {
+    background: linear-gradient(135deg, #4316e8 0%, #6d609d 100%);
+    color: #ffc107;
+    border: none;
+    border-radius: 50px;
+    padding: 0.35rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 4px 15px rgba(46, 44, 221, 0.45);
+    transition: all 0.35s ease;
+    transform: translateY(0);
+
+    &:hover,
+    &:focus {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 25px rgba(31, 40, 167, 0.65);
+    }
+}

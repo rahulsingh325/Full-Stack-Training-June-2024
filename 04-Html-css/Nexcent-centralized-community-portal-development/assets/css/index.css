@@ -1,0 +1,325 @@
+/** style to section-one**/
+
+.section-one__left-pannel {
+    display: flex;
+    flex-direction: column;
+    gap: 22.27px;
+    padding: 60px 0;
+
+
+}
+
+.section-one {
+    padding-top: 66.82px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.sec-btn {
+    align-self: start;
+}
+
+.dot {
+    justify-self: center;
+}
+
+
+
+/**style to section-two **/
+.sectioneight {
+    justify-items: center;
+
+}
+
+#sec-sec-up {
+    padding-top: 20px;
+    margin: 0;
+}
+
+.sectioneight .sectioneight-p {
+    width: 70vw;
+}
+
+.sectionTwo__upper-sec-2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sectionTwo__lower-sec-2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+}
+
+.h2-fir {
+    padding-top: 50px;
+    margin-bottom: 5px;
+}
+
+.sectionTwo__lower-sec-2 img {
+    width: 5vw;
+}
+
+
+
+/**style to section-three **/
+.sectionThree {
+    padding: 100px 0;
+    text-align: center;
+    justify-items: center;
+
+}
+
+#sec-thir-up {
+    padding-top: 70px;
+}
+
+.sectionThree__bottom-pannel--left .p,
+.sectionThree__bottom-pannel--center .p,
+.sectionThree__bottom-pannel--right .p {
+    padding-top: 10px;
+}
+
+.sectionThree__upper-panel {
+    text-align: center;
+}
+
+/** part-two**/
+.sectionThree__bottom-pannel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.sectionThree__upper-panel .h2 {
+    max-width: 9se00px;
+
+}
+
+
+/**style to section-four **/
+.sectionfour {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.sectionfour__left-pannel img {
+    width: 30vw;
+}
+
+.sectionfour-upeer-paanel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.thir-btn {
+    align-self: flex-start;
+}
+
+
+.section-five__left-pannel .h4 {
+    font-weight: 600;
+}
+
+
+
+/**style to section-five **/
+
+.section-five {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.section-five__right-pannel {
+    display: flex;
+    gap: 50px;
+}
+
+.section-five__upeer-panel-one {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.section-five__lower-pannel-two {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sectioneight .h2 {
+    padding: 10px 0;
+}
+
+.sec-five-data {
+    text-align-last: left;
+}
+
+
+/**style to section-six **/
+.sectionsix {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 100px 0;
+    align-items: center;
+}
+
+
+
+
+/**style to section-seven **/
+
+.sectionseven {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.sectionfour__image-pannel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionseven__left-pannel img {
+    width: 400px;
+}
+
+
+
+
+/** Style for section-eight **/
+
+.sectioneight {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.remo-sec-8 {
+    display: flex;
+
+}
+
+.bi-arrow-right {
+    color: var(--color-green);
+    padding-top: 2px;
+}
+
+.sectioneight-bottom-pannel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.sectioneight-bottom-pannel-part-one,
+.sectioneight-bottom-pannel-part-two,
+.sectioneight-bottom-pannel-part-three {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally */
+    justify-content: flex-start;
+    /* Align content to the top */
+}
+
+.sectioneight-bottom-pannel-contant {
+    flex-wrap: wrap;
+}
+
+.sectioneight-bottom-pannel-part-one img,
+.sectioneight-bottom-pannel-part-two img,
+.sectioneight-bottom-pannel-part-three img {
+    width: 25vw;
+    position: relative;
+    z-index: 0;
+    margin-bottom: -25%;
+}
+
+.sectioneight-bottom-pannel-contant {
+    width: 20vw;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 150px;
+}
+
+.sec-8-redme {
+    padding: 10px;
+}
+
+.sectioneight-bottom-pannel-part-one .sectioneight-bottom-pannel-contant,
+.sectioneight-bottom-pannel-part-two .sectioneight-bottom-pannel-contant,
+.sectioneight-bottom-pannel-part-three .sectioneight-bottom-pannel-contant {
+    margin-top: 2vw;
+}
+
+
+.remo-sec-8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 1px;
+}
+
+.remo-sec-8 img {
+    margin-bottom: 0;
+    /* Ensures no extra space below the arrow */
+}
+
+
+
+
+
+
+/** style rule for section-nine**/
+.sectionnine {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    width: 800px;
+    justify-items: center;
+    align-items: center;
+}
+
+#last-sec {
+    padding-top: px;
+}
+
+.last-btn {
+    align-self: center;
+    padding-top: 20px;
+}
+
+.sectionnine button {
+    margin-top: 30px;
+}
+
+.sectionnine .h1 {
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}

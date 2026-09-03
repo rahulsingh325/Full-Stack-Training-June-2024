@@ -1,0 +1,12 @@
+.card-image {
+    padding-top: 30px;
+    padding-left: 120px;
+}
+
+@media (max-width: 991px) {
+    .card-image {
+        padding-left: 0px;
+    }
+
+
+}

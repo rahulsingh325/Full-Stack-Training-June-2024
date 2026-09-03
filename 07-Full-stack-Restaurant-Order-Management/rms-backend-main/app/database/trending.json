@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "image": "crispydory.jpg",
+        "title": "Crispy Dory Sambal Matah",
+        "numberOfOrders": 190,
+        "upscalePercent": 27.4
+    },
+    {
+        "id": 2,
+        "image": "kopagbenedict.jpg",
+        "title": "Kopag Benedict",
+        "numberOfOrders": 170,
+        "upscalePercent": 25.6
+    },
+    {
+        "id": 3,
+        "image": "hollandbitterballen.jpg",
+        "title": "Holland Bitterballen",
+        "numberOfOrders": 150,
+        "upscalePercent": 23.9
+    },
+    {
+        "id": 4,
+        "image": "doryenoats.jpg",
+        "title": "Dory En Oats",
+        "numberOfOrders": 130,
+        "upscalePercent": 21.4
+    },
+    {
+        "id": 5,
+        "image": "lemonbutterdory.jpg",
+        "title": "Lemon Butter Dory",
+        "numberOfOrders": 120,
+        "upscalePercent": 19.1
+    }
+]

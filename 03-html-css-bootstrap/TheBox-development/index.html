@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg  bg-white">
+            <div class="container">
+                <a class="navbar-brand d-flex " href="#" aria-label="Go to home page">
+                    <img class="logo-icon " src="./images/Logo/thebox.svg" alt="Logo Icon">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav  ms-auto   navbar-nav-scroll align-items-center">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section  overflow-x-hidden">
+            <div id="carouselExampleDark" class="carousel  slide carousel-fade">
+                <div class="carousel-indicators d-none">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/bg-images/522e6a5f380cba7232041d621d835a77aaeaf072.jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p class="h4">Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/bg-images/hero-slide-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p class="h4">Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/bg-images/hero-slide-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p class="h4">Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute bottom-0 end-0 d-flex btn-group gap-1">
+                    <button
+                        class="flex-grow-1  bg-black text-white position-static border-0 py-2 d-flex justify-content-center align-items-center gap-2 d-md-block d-none"
+                        type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <img src="./images/arrow/Vector.svg" alt="">Back
+                    </button>
+                    <button
+                        class="flex-grow-1  bg-black text-white position-static border-0 py-2 d-flex justify-content-center align-items-center gap-2 d-md-block d-none"
+                        type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        Next <img src="./images/arrow/right.svg" alt="">
+                    </button>
+                </div>
+                <div
+                    class="position-absolute pe-none w-100 h-100 top-0 start-0  d-flex justify-content-center align-items-center z-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-6 ">
+                                <h1 class="fw-bold h1 text-center text-md-start">Building things is our mission.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="reputation-section my-5 py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col text-center">
+                        <h3 class="fw-bold">Our Reputation</h3>
+                    </div>
+                </div>
+                <div class="row g-3 gap-lg-5 justify-content-center">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-xl-start text-sm-center">
+                                <div class="mb-3">
+                                    <img src="./images/reputation-section-img/icon.svg" alt="Best Services"
+                                        class="img-fluid mb-3">
+                                </div>
+                                <h5 class="card-title fw-bold">Best Services</h5>
+                                <p class="card-text">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-xl-start text-sm-center ">
+                                <div class="mb-3">
+                                    <img src="./images/reputation-section-img/icon.svg" alt="Best Teams"
+                                        class="img-fluid mb-3">
+                                </div>
+                                <h5 class="card-title fw-bold">Best Teams</h5>
+                                <p class="card-text">Cursus semper tellus volutpat aliquet lacus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-xl-start text-sm-center">
+                                <div class="mb-3">
+                                    <img src="./images/reputation-section-img/bast-desigin.svg" alt="Best Designs"
+                                        class="img-fluid mb-3">
+                                </div>
+                                <h5 class="card-title fw-bold">Best Designs</h5>
+                                <p class="card-text">Ultricies at ipsum nunc, tristique nam lectus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-section py-5">
+            <div class="container">
+                <div class="card mb-3 border-0">
+                    <div class="row g-0">
+                        <div class="col-lg-9">
+                            <img src="./images/about-section-img/person-img.svg" class="img-fluid  rounded-start"
+                                alt="...">
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card about-card">
+                                <div class="card-body text-white ps-xl-5 text-center text-lg-start">
+                                    <h3 class="card-title mt-lg-3">About us</h3>
+                                    <p class="card-text mt-lg-4">For more than 30 years we have been <br>delivering
+                                        world-class
+                                        construction <br>and we've built many lasting <br>relationships along the way.
+                                    </p>
+                                    <p class="card-text mt-lg-2">We've matured into an industry leader <br>and trusted
+                                        resource for
+                                        those seeking<br> quality,
+                                        innovation and reliability when <br>building in the U.S.</p>
+                                    <a href="#" class="btn btn-primary bg-white mt-lg-5 mb-lg-3">More on Our History</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="service-section py-5 bg-light">
+            <div class="container">
+                <div class="row mb-4 text-center">
+                    <div class="col">
+                        <h3 class="fw-bold">Services</h3>
+                    </div>
+                </div>
+                <div class="row gx-5 gy-4 py-4 mx-5  justify-content-center">
+                    <div class="col-md-4 col-sm-6 px-lg-5 col-12 mx-auto">
+                        <div class="card  text-center border">
+                            <div class="card-body">
+                                <img src="./images/service-img/construction.svg" alt="Construction" class="mb-3">
+                                <div class="separator mx-auto my-2"><img src="./images/service-img/seprater.svg" alt="">
+                                </div>
+                                <h5 class="card-title">Construction</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 px-lg-5 col-12 mx-auto">
+                        <div class="card  text-center  blue-card text-white">
+                            <div class="card-body">
+                                <img src="./images/service-img/icon.svg" alt="Renovation" class="mb-3">
+                                <div class="separator mx-auto my-2"><img src="./images/service-img/seprater.svg" alt="">
+                                </div>
+                                <h5 class="card-title">Renovation</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 px-lg-5 col-12 mx-auto">
+                        <div class="card text-center border">
+                            <div class="card-body">
+                                <img src="./images/service-img/cons-3.svg" alt="Consultation" class="mb-3">
+                                <div class="separator mx-auto my-2"><img src="./images/service-img/seprater.svg" alt="">
+                                </div>
+                                <h5 class="card-title">Consultation</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 px-lg-5 col-12 mx-auto">
+                        <div class="card  text-center  blue-card text-white">
+                            <div class="card-body">
+                                <img src="./images/service-img/repir.svg" alt="Repair Services" class="mb-lg-3 mb-sm-0">
+                                <div class="separator mx-auto my-lg-2 my-2 mb-sm-0"><img
+                                        src="./images/service-img/seprater.svg" alt=""></div>
+                                <h5 class="card-title">Repair Services</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 px-lg-5 col-12 mx-auto">
+                        <div class="card  text-center border">
+                            <div class="card-body">
+                                <img src="./images/service-img/arcit.svg" alt="Architecture" class="mb-3">
+                                <div class="separator mx-auto my-2"><img src="./images/service-img/seprater.svg" alt="">
+                                </div>
+                                <h5 class="card-title">Architecture</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 px-lg-5 col-12 mx-auto">
+                        <div class="card  text-center  blue-card text-white">
+                            <div class="card-body">
+                                <img src="./images/service-img/electric.svg" alt="Electric" class="mb-3">
+                                <div class="separator mx-auto my-2"><img src="./images/service-img/seprater.svg" alt="">
+                                </div>
+                                <h5 class="card-title">Electric</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section py-4 pb-lg-100 pt-lg-120">
+            <div class="container">
+                <div class="row jestify-content-center">
+                    <div class="col-12 col-lg-11">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-12 col-lg-8 col-xl-6 order-1 order-lg-0">
+                                <div
+                                    class="fact-group d-flex g-3 g-lg-0 flex-column flex-md-row justify-content-between flex-lg-column flex-md-wrap">
+
+                                    <div
+                                        class="fact-card bg-white position-relative shadow rounded-2 text-center text-lg-start p-30 ms-lg-auto z-1">
+                                        <div class="fact-icon top-right"><img src="./images/experience-img/icone-5.svg"
+                                                alt="">
+                                        </div>
+                                        <div class="h1 text-neutral-800 fw-bold mt-3 mt-lg-0">84</div>
+                                        <div class="fact-text fs-4 text-neutral-500">Happy Client</div>
+                                    </div>
+
+                                    <div
+                                        class="fact-card bg-white position-relative shadow rounded-2 text-center text-lg-start p-30 mt-lg-n60">
+                                        <div class="fact-icon top-left"><img src="./images/experience-img/icone-6.svg"
+                                                alt="">
+                                        </div>
+                                        <div class="h1 text-neutral-800 fw-bold mt-3 mt-lg-0">123</div>
+                                        <div class="fact-text fs-4 text-neutral-500">Projects Completed</div>
+                                    </div>
+
+                                    <div
+                                        class="fact-card bg-white position-relative shadow rounded-2 text-center text-lg-start p-30 ms-lg-auto z-1 me-lg-76 mt-lg-n3">
+                                        <div class="fact-icon top-right"><img src="./images/experience-img/icon-7.svg"
+                                                alt="">
+                                        </div>
+                                        <div class="h1 text-neutral-800 fw-bold mt-3 mt-lg-0">37</div>
+                                        <div class="fact-text fs-4 text-neutral-500">Awards Win</div>
+                                    </div>
+
+                                    <div
+                                        class="fact-card bg-white position-relative shadow rounded-2 text-center text-lg-start p-30 ms-lg-50 mt-lg-n50">
+                                        <div class="fact-icon bottom-right"><img
+                                                src="./images/experience-img/icon-8.svg" alt="">
+                                        </div>
+                                        <div class="h1 text-neutral-800 fw-bold mt-3 mt-lg-0">30</div>
+                                        <div class="fact-text fs-4 text-neutral-500">Years in Business</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center text-lg-start my-4 my-lg-0">
+                                <h2 class="mb-lg-40 mb-3 fs-2 fw-bold text-primary">30 Year Experience</h2>
+                                <p class="mb-3 mb-lg-50 fs-5 text-neutral-600 ">Our company has been the leading
+                                    provided construction services
+                                    to clients throughout the USA since 1988.</p>
+                                <a href="#" class="btn btn-primary fw-semibold fs-6 py-3 px-40">Contact Us</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="consultation-section container-fluid bg-image-full p-5"
+            style="background-image: url('./images/consultation/unsplash_MP0bgaS_d1c.svg');">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-8 text-white mt-lg-5 ">
+                        <h3 class="mb-3 fw-bold ">Free consultation with exceptional quality</h3>
+                        <p class="mb-4 d-flex ">Just one call away: +8411022703</p>
+                    </div>
+                    <div class="col-lg-4 mt-lg-5 d-flex justify-content-center align-items-center">
+                        <button class="get-button btn btn-outline-light border-white border-2 ">Get your
+                            consultation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="project-section py-5">
+            <div class="container">
+                <div class="d-flex align-items-start row">
+                    <div class="col-12 col-md-4 nav flex-md-column align-items-start  " id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">All</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">commercial</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">Residential</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">Other</button>
+                    </div>
+                    <div class="col-12 col-md-8 tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="swiper mySwiper pb-5 pt-3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="position-absolute bottom-0 d-flex justify-content-between align-items-center w-100">
+                                    <div class="swiper-button-prev position-static w-100 bg-black text-white">Back
+                                    </div>
+                                    <div class="swiper-pagination position-static w-100"></div>
+                                    <div class="swiper-button-next position-static w-100 bg-black text-white">Next
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="swiper mySwiper pb-5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="position-absolute bottom-0 d-flex justify-content-between align-items-center w-100">
+                                    <div class="swiper-button-prev position-static w-100 bg-black text-white">Back
+                                    </div>
+                                    <div class="swiper-pagination position-static w-100"></div>
+                                    <div class="swiper-button-next position-static w-100 bg-black text-white">Next
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <div class="swiper mySwiper pb-5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="position-absolute bottom-0 d-flex justify-content-between align-items-center w-100">
+                                    <div class="swiper-button-prev position-static w-100 bg-black text-white">Back
+                                    </div>
+                                    <div class="swiper-pagination position-static w-100"></div>
+                                    <div class="swiper-button-next position-static w-100 bg-black text-white">Next
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <div class="swiper mySwiper pb-5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card rounded-0 border-0">
+                                            <img src="./images/project-img/unsplash_T0iFfJw-rB0.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body bg-primary text-white p-2">
+                                                <h5>Wildstone Infra Hotel</h5>
+                                                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="position-absolute bottom-0 d-flex justify-content-between align-items-center w-100">
+                                    <div class="swiper-button-prev position-static w-100 bg-black text-white">Back
+                                    </div>
+                                    <div class="swiper-pagination position-static w-100"></div>
+                                    <div class="swiper-button-next position-static w-100 bg-black text-white">Next
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-md-8">
+                        <h3 class="text-center fw-bold mb-3">What can us do for you?</h3>
+                        <h5 class="text-center mb-4">We are ready to work on a project of any complexity,<br> whether
+                            it's commercial
+                            or residential.</h5>
+                        <form>
+                            <div class="row gx-4 gy-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name *" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email *" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select form-select mb-3" aria-label="Large select example">
+                                        <option selected>Reason for Contacting *</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Phone">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <small class="d-block mt-2 mb-3 text-muted required-field ">
+                                <span class="text-danger">*</span>
+                                indicates a required field
+                            </small>
+                            <div class="text-center"><button class="btn btn-submit text-white px-5 w-50 "
+                                    type="button">submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container pt-md-5">
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-md-6 d-grid  ">
+                    <p><strong><a href="https://maps.google.com/?q=6391+Elgin+St.+Celina,+Delaware+10299"
+                                target="_blank">ADDRESS:</a></strong> 6391 Elgin St. Celina, Delaware 10299</p>
+                    <p><strong><a href="tel:+8411022703">PHONE:</a></strong> +84 1102 2703</p>
+                    <p><strong><a href="mailto:hello@thebox.com">EMAIL:</a></strong> hello@thebox.com</p>
+                    <a class="d-block mb-3">
+                        <img class="logo-icon" src="./images/Logo/thebox.svg" alt="TheBox Logo">
+                    </a>
+                </div>
+
+                <!-- Newsletter and Social -->
+                <div class="col-md-6 d-grid text-start  justify-content-md-center">
+                    <div class="mb-0">
+                        <label for="newsletter" class="form-label"><strong><a href="#">NEWSLETTER:</a></strong></label>
+                        <div class="row mt-2">
+                            <div class="col-8 col-md-6 "><input type="email" id="newsletter" class="form-control "
+                                    placeholder="Your email here"></div>
+                            <div class="col-4 col-lg-3 "><button class="btn btn-subscribe text-white  "
+                                    type="button">Subscribe</button></div>
+                        </div>
+                    </div>
+                    <div class="social-icons  d-flex flex-column ">
+                        <strong><a href="#">SOCIAL:</a></strong>
+                        <div class="d-flex  gap-3">
+                            <a href="#" class="social-link"><img src="./images/sociel-icons/facebook-icon.svg"
+                                    alt="Facebook"></a>
+                            <a href="#" class="social-link"><img src="./images/sociel-icons/linkedin-icon.svg"
+                                    alt="LinkedIn"></a>
+                            <a href="#" class="social-link"><img src="./images/sociel-icons/twitter-icon.svg"
+                                    alt="Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer-bottom text-sm-center text-lg-start">
+                <p>TheBox Company © 2025. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+                fill: 'row'
+
+
+            },
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

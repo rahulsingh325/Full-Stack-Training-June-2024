@@ -1,0 +1,19 @@
+
+.profile-layout{
+    .rotate-180{rotate: 180deg;}
+    .rounded-8{border-radius: .5rem;}
+
+    .offcanvas {height: 100% !important;}
+    .bg-gradient{
+        background: linear-gradient(145deg, #2A65FB ,  #C5D5FE) !important;
+    }
+    .page-item .page-link{
+        color: $primary;
+        background-color: transparent;
+        border-color: #2A65FB;
+    }
+    .page-item.disabled .page-link{
+        border-color: gray;
+        color: gray;
+    }
+}

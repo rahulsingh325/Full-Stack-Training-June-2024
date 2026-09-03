@@ -1,0 +1,74 @@
+.experience-section{
+    .fact-card{
+
+        @media (min-width: 768px){
+            width: 45%;
+            flex-grow:1;
+        }
+
+        .fact-icon img{
+            height: 5rem;
+            width: 5rem;
+        }
+
+        @media (min-width: 991px){
+            width: max-content;
+            padding-right: 60px !important;
+
+            .fact-icon{
+                position: absolute;
+            }
+
+            .fact-icon.top-right{
+                right: 0;
+                top: 0;
+                translate: 50% -50%;
+            }
+
+            .fact-icon.top-left{
+                left: 0;
+                top: 0;
+                translate: -50% -50%;
+            }
+
+            .fact-icon.bottom-right{
+                bottom: 0;
+                right: 0;
+                translate: 50% 50%;
+            }
+
+        } 
+
+        .fact-text{
+            padding-left: 35px;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                display: block;
+                left: 0;
+                width: 7px;
+                height: 100%;
+                top: 0;
+                background-color: $accent-orange;
+            }
+
+            @media (max-width: 991px){
+                width: max-content;
+                margin-inline: auto;
+                padding-left: 0;
+                padding-top: 25px;
+
+                &::after{
+                    height: 7px;
+                    width: 100%;
+                }
+            }
+
+            
+        }
+    }
+
+
+}

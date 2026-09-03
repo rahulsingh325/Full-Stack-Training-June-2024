@@ -1,0 +1,105 @@
+.forgot-password-container {
+
+    /* Sidebar steps */
+    .steps-sidebar {
+        .steps-list {
+            /* vertical connector line behind items */
+            &::before {
+                content: "";
+                position: absolute;
+                left: 24px;
+                top: 48px;
+                bottom: 48px;
+                width: 3px;
+                background: #eef1f6;
+                border-radius: 2px;
+            }
+
+            .step-item {
+                .step-circle {
+                    width: 48px;
+                    height: 48px;
+                    border: 5px solid var(--step-border, #dfdfdf);
+                }
+
+                // for active state
+                &.active {
+                    .step-circle {
+                        border: 5px solid transparent;
+                        background:
+                            linear-gradient(#fff, #fff) padding-box,
+                            linear-gradient(180deg, #F3F3F3 0%, #2261FF 100%) border-box;
+                        background-clip: padding-box, border-box;
+                        background-origin: border-box;
+                    }
+                }
+            }
+        }
+    }
+
+    // ===================================================================
+
+
+    .rotate-180 {
+        transform: rotate(180deg);
+    }
+
+    // ==================================================================
+
+
+    .otp-input:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: none;
+    }
+
+
+    // ==================================================================
+
+    .otp-input {
+        padding: 0rem !important;
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 2.5rem !important;
+            height: 3rem !important;
+        }
+
+        @media (max-width: 576px) {
+            height: 2.5rem !important;
+            font-size: 1rem !important;
+        }
+
+        @media (max-width: 425px) {
+            width: 1.7rem !important;
+            height: 3rem !important;
+            font-size: 0.875rem !important;
+        }
+    }
+
+
+    // ==================================================================
+
+    .h-120 {
+        height: 7.5rem !important;
+    }
+
+    //Outlines 
+    .outline-3 {
+        outline-width: 0.75rem !important;
+        outline-style: solid;
+    }
+
+    //outline colors
+    .outline-neutral-50 {
+        outline-color: #FAFAFA;
+    }
+
+    //aspect ration
+    .square {
+        aspect-ratio: 1/1;
+    }
+
+}
+
+
+

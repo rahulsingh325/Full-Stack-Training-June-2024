@@ -1,0 +1,42 @@
+name: CI/CD DEV
+on:
+  push:
+    branches: [ "dev" ]
+
+env:
+  AWS_REGION: ap-south-1
+  ECR_REPO: indixpert/talent-cloud/eventmgmt   # <-- your ECR repo
+
+jobs:
+  deploy-dev:
+    runs-on: ubuntu-latest
+    permissions: { id-token: write, contents: read }
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}   # single generic role per repo
+          aws-region: ${{ env.AWS_REGION }}
+
+      - uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build & Push image (dev-<sha7>)
+        run: |
+          ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+          ECR=${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}
+          IMAGE_TAG="dev-${GITHUB_SHA::7}"
+          echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
+          docker build -t ${ECR}:${IMAGE_TAG} .
+          docker push ${ECR}:${IMAGE_TAG}
+
+      - name: Deploy to App Runner (DEV)
+        run: |
+          ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+          IMAGE_URI="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:${IMAGE_TAG}"
+          aws apprunner update-service \
+            --service-arn "${{ secrets.APP_RUNNER_DEV_ARN }}" \
+            --source-configuration "{\"ImageRepository\":{\"ImageIdentifier\":\"${IMAGE_URI}\",\"ImageRepositoryType\":\"ECR\",\"ImageConfiguration\":{\"Port\":\"8000\"}}}"
+          echo "Update-service called; App Runner will deploy the new image."  

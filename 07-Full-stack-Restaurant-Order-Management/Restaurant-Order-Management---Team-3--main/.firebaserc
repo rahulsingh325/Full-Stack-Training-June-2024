@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "indixpert-training"
+  },
+  "targets": {
+    "indixpert-training": {
+      "hosting": {
+        "prod": [
+          "rms-team-3"
+        ],
+        "uat": [
+          "uat-rms-team-3"
+        ],
+        "dev": [
+          "dev-rms-team-3"
+        ]
+      }
+    }
+  }
+}
