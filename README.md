@@ -4,7 +4,7 @@
 
 ### *A curated repository of code written during intensive Full-Stack Development training and the initial phase of professional work — reflecting real growth from fundamentals to production-ready projects.*
 
-[![GitHub](https://img.shields.io/badge/Author-rahulsingh325-181717?style=for-the-badge&logo=github)](https://github.com/rahulsingh325)
+[![GitHub](https://img.shields.io/badge/Author-rahulsingh325-FF6B00?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rahulsingh325)
 [![Languages](https://img.shields.io/badge/Languages-C%20|%20Python%20|%20HTML%20|%20CSS%20|%20JS%20|%20Bootstrap%20|%20React-blue?style=for-the-badge)](#)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](#)
 
